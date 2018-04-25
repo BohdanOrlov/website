@@ -1,0 +1,24 @@
+.hd {
+    background-color: red;
+    grid-area: hd;
+    height: 100vh;
+  }
+
+.ct {
+    background-color: yellow;
+    grid-area: ct;
+    display: grid;
+    grid-auto-rows: 100vh;
+}
+
+.ft {
+    background-color: green;
+    grid-area: ft;
+    height: 100vh;
+}
+
+@media (min-width: 500px) {
+    .ct {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}

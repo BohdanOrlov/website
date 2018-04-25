@@ -1,0 +1,24 @@
+.container {
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: repeat(2, 50%); */
+    
+    grid-template-areas: 
+      "hd"
+      "ct"
+      "ft";
+    /* grid-auto-columns: 50%; */
+    /* grid-template-rows: 100% repeat(2, 120px); */
+    /* grid-row-gap: .5em; */
+    /* grid-column-gap: 1em; */
+  }
+
+/* @media (min-width: 500px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 
+        "hd hd"
+        "ct ct"
+        "ft ft";
+    }
+} */
