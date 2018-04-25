@@ -8,17 +8,36 @@
     background-color: yellow;
     grid-area: ct;
     display: grid;
-    grid-auto-rows: 100vh;
+    /* grid-template-rows: minmax(100vh, auto); */
+    grid-auto-rows: minmax(100vh, auto); 
 }
 
 .ft {
     background-color: green;
     grid-area: ft;
     height: 100vh;
+    
 }
 
-@media (min-width: 500px) {
+@media screen and (orientation:landscape) {
     .ct {
       grid-template-columns: repeat(2, 1fr);
     }
+}
+
+.header {
+    background-color: yellow;
+}
+
+.header2 {
+    background-color: rgb(89, 0, 255);
+}
+
+.header3 {
+    background-color: rgb(255, 145, 0);
+}
+
+
+.content {
+    background-color: white;
 }
