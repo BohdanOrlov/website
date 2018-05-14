@@ -1,36 +1,44 @@
 import React from "react"
 import Container from "../components/container";
 import styles from "./index.module.css";
-import About from "../layouts/about"
+import onscroll from "../utils/onscroll.js";
+import AboutImage from "./content/resources/about.png"
 
 export default ({ data }) =>
     <Container>
         <div className={styles.hd}>Item1</div>
         <div className={styles.ct}>
             <div className={styles.header}>
-                About
+                <div className={styles.headerContainer}>
+                    <img src={AboutImage} className={styles.headerImage} alt="" />
+                </div>
             </div>
             <div className={styles.content}>
-                <div dangerouslySetInnerHTML={{ __html: data.about.html}}/>
+                <div dangerouslySetInnerHTML={{ __html: data.about.html }} />
             </div>
             <div className={styles.header2}>
-                Work
+                <div className={styles.headerContainer}>
+                    <img src={AboutImage} className={styles.headerImage} alt="" />
+                </div>
             </div>
             <div className={styles.content}>
-                <div dangerouslySetInnerHTML={{ __html: data.work.html}}/>
+                <div dangerouslySetInnerHTML={{ __html: data.work.html }} />
             </div>
             <div className={styles.header3}>
-                Contact
+                <div className={styles.headerContainer}>
+                    <img src={AboutImage} className={styles.headerImage} alt="" />
+                </div>
             </div>
             <div className={styles.content}>
-                <div dangerouslySetInnerHTML={{ __html: data.contact.html}}/>
+                <div dangerouslySetInnerHTML={{ __html: data.contact.html }} />
             </div>
         </div>
         <div className={styles.ft}>Item4</div>
     </Container>
 
-
-
+window.onload = function () {
+    window.onscroll = onscroll
+};
 
 export const query = graphql`
     query IndexQuery {
