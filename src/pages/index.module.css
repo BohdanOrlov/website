@@ -4,13 +4,13 @@ body {
 }
 
 .hd {
-    background-color: red;
+    background-color: #292929;
     grid-area: hd;
     height: 100vh;
   }
 
 .ct {
-    background-color: yellow;
+    background-color: white;
     grid-area: ct;
     display: grid;
     /* grid-template-rows: minmax(100vh, auto); */
@@ -18,24 +18,36 @@ body {
 }
 
 .ft {
-    background-color: green;
+    background-color: #F44A52;
     grid-area: ft;
     height: 100vh;
     
 }
 
+.name {
+    font-size: 150px;
+    font-family: 'Montserrat';
+    color: white;
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 .header {
-    background-color: yellow;
+    background-color: #F44A52;
     position: relative;
 }
 
 .header2 {
-    background-color: rgb(89, 0, 255);
+    background-color: white;
     position: relative;
 }
 
 .header3 {
-    background-color: rgb(255, 145, 0);
+    background-color: #292929;
     position: relative;
 }
 
@@ -44,7 +56,7 @@ body {
     bottom: 0px;
     position: absolute;
     height: 100vh;
-    width: 50vw;
+    width: 100vw;
     z-index: 100;
 }
 
@@ -58,14 +70,60 @@ body {
     bottom: 0;
 }
 
+.photoImage {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 8rem;
+    transform:  translate(+0%, -50%);
+}
+
+
+
+.headerTitle {
+    font-family: 'Sacramento';
+    color: white;
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.headerTitleDark {
+    font-family: 'Sacramento';
+    color: #292929;
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 .content {
-    background-color: white;
+    margin: 6rem;
+}
+
+.dark {
+    background: #292929;
+    color: white;
 }
 
 @media screen and (orientation:landscape) {
+    .headerContainer {
+        width: 50vw;
+    }
     .ct {
       grid-template-columns: repeat(2, 1fr);
     }
+    .photoImage {
+        left: auto;
+        right: 0;
+        transform:  translate(+50%, +50%);
+    }
+    
 }
 
