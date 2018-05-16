@@ -2,12 +2,14 @@ import React from "react"
 import Container from "../components/container";
 import styles from "./index.module.css";
 import onscroll from "../utils/onscroll.js";
+import lastNameShuffling from "../utils/lastNameShuffling";
 import PhotoImage from "./content/resources/hexagon.png"
 
 export default ({ data }) =>
     <Container>
         <div className={styles.hd}>
-            <h1 className={styles.name}>Bohdan Orlov</h1>
+            <h1 className={styles.name}>Bohdan</h1>
+            <h1 className={styles.name} id="variableLastName"></h1>
         </div>
         <div className={styles.ct}>
             <div className={styles.header}>
@@ -41,6 +43,7 @@ export default ({ data }) =>
 
 window.onload = function () {
     window.onscroll = onscroll
+    lastNameShuffling()
 };
 
 export const query = graphql`

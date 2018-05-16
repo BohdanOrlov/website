@@ -7,6 +7,10 @@ body {
     background-color: #292929;
     grid-area: hd;
     height: 100vh;
+    display: grid;
+    grid-row-gap: 10rem;
+    grid-template-rows: min-content;
+    
   }
 
 .ct {
@@ -25,7 +29,7 @@ body {
 }
 
 .name {
-    font-size: 150px;
+    font-size: 8rem;
     font-family: 'Montserrat';
     color: white;
     position: relative;
@@ -35,6 +39,49 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+.lastName {
+    font-size: 8rem;
+    font-family: 'Montserrat';
+    opacity: 0;
+}
+
+.engineer {
+    font-size: 8rem;
+    font-family: 'Sacramento';
+    opacity: 0;
+}
+
+.writer {
+    font-size: 8rem;
+    font-family: 'Montserrat';
+    opacity: 0;
+}
+
+.speaker {
+    font-size: 8rem;
+    font-family: 'Montserrat';
+    opacity: 0;
+}
+
+.nameAppear {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 1.0 !important;
+}
+
+.nameDisappear {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0.0 !important;
+}
+
 
 .header {
     background-color: #F44A52;
@@ -120,7 +167,7 @@ body {
       grid-template-columns: repeat(2, 1fr);
     }
     .photoImage {
-        left: auto;
+        left: auto  ;
         right: 0;
         transform:  translate(+50%, +50%);
     }
