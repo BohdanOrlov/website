@@ -1,0 +1,43 @@
+.hexagon {
+    background: black;
+    height: 60px;
+    position: relative;
+    width: 120px;
+    -webkit-transition: .25s;
+       -moz-transition: .25s;
+        -ms-transition: .25s;
+         -o-transition: .25s;
+            transition: .25s;
+    -webkit-transform: scale(1.0000001);
+       -moz-transform: scale(1.0000001);
+            transform: scale(1.0000001);
+}
+.hexagon:after {
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 35px solid black;
+    bottom: -35px;
+    height: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    width: 0;
+}
+.hexagon:before {
+    border-bottom: 35px solid black;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    height: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    top: -35px;
+    width: 0;
+}
+.hexagon:hover {
+    -webkit-transform: scale(1.5);
+       -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+         -o-transform: scale(1.5);
+            transform: scale(1.5);
+}

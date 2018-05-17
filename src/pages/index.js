@@ -1,16 +1,27 @@
 import React from "react"
 import Container from "../components/container";
+import Particles from "../components/particles";
 import styles from "./index.module.css";
-import onscroll from "../utils/onscroll.js";
+import hexagonStyles from "./hexagon.css";
+import onscroll from "../utils/onscroll.js"
+import onclick from "../utils/onClick.js";
 import lastNameShuffling from "../utils/lastNameShuffling";
 import PhotoImage from "./content/resources/hexagon.png"
+import BadooImage from "./content/resources/work/Badoo.png"
+import ChappyImage from "./content/resources/work/Chappy.png"
+import onefinestayImage from "./content/resources/work/onefinestay.png"
+
+
 
 export default ({ data }) =>
     <Container>
+
         <div className={styles.hd}>
             <h1 className={styles.name}>Bohdan</h1>
             <h1 className={styles.name} id="variableLastName"></h1>
+            <Particles/>
         </div>
+
         <div className={styles.ct}>
             <div className={styles.header}>
                 <div className={styles.headerContainer}>
@@ -27,7 +38,19 @@ export default ({ data }) =>
                 </div>
             </div>
             <div className={styles.dark}>
-                <div className={styles.content} dangerouslySetInnerHTML={{ __html: data.work.html }} />
+                <div className={styles.contentWork}>
+                    <div className={styles.cropping}>
+                        <img className={styles.workImage} onClick={() => onclick('https://itunes.apple.com/us/app/badoo-the-dating-app/id351331194?mt=8')} src={BadooImage} alt=""></img>
+                        {/* <div className={styles.hexagonContainer}>
+                            <div className={styles.hexagon}></div>
+                        </div> */}
+                    </div>
+                    <div className={styles.content} dangerouslySetInnerHTML={{ __html: data.work.html }} />
+                    <img className={styles.workImage} src={ChappyImage} alt="" />
+                    <div className={styles.content} dangerouslySetInnerHTML={{ __html: data.work.html }} />
+                    <img className={styles.workImage} src={onefinestayImage} alt="" />
+                    <div className={styles.content} dangerouslySetInnerHTML={{ __html: data.work.html }} />
+                </div>
             </div>
             <div className={styles.header3}>
                 <div className={styles.headerContainer}>
@@ -38,6 +61,7 @@ export default ({ data }) =>
                 <div className={styles.content} dangerouslySetInnerHTML={{ __html: data.contact.html }} />
             </div>
         </div>
+
         <div className={styles.ft}>Item4</div>
     </Container>
 
