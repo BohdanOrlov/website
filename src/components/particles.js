@@ -22,10 +22,10 @@ export default ({ children }) => (
                 },
             },
             opacity: {
-                value: 0.5,
-                random: false,
+                value: 1,
+                random: true,
                 anim: {
-                    enable: false,
+                    enable: true,
                     speed: 1,
                     opacity_min: 0.1,
                     sync: false
@@ -50,15 +50,15 @@ export default ({ children }) => (
             },
             move: {
                 enable: true,
-                speed: 3,
+                speed: 6,
                 direction: 'top',
-                random: false,
+                random: true,
                 straight: true,
                 out_mode: 'out',
                 attract: {
                     enable: false,
-                    rotateX: 12000,
-                    rotateY: 12000
+                    rotateX: 1200,
+                    rotateY: 100000
                 }
             }
         },
@@ -70,7 +70,7 @@ export default ({ children }) => (
                     mode: 'bubble'
                 },
                 onclick: {
-                    enable: true,
+                    enable: false,
                     mode: 'push'
                 },
                 resize: true
@@ -87,7 +87,7 @@ export default ({ children }) => (
                     size: 0,
                     duration: 2,
                     opacity: 0,
-                    speed: 3
+                    speed: 1
                 },
                 repulse: {
                     distance: 200
