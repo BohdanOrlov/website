@@ -12,13 +12,13 @@ export default ({ children }) => (
                 value: '#ffffff'
             },
             shape: {
-                type: 'circle',
+                type: 'polygon',
                 stroke: {
                     width: 0,
                     color: '#000000'
                 },
                 polygon: {
-                    nb_sides: 5
+                    nb_sides: 6
                 },
             },
             opacity: {
@@ -42,7 +42,7 @@ export default ({ children }) => (
                 }
             },
             line_linked: {
-                enable: false,
+                enable: true,
                 distance: 150,
                 color: '#ffffff',
                 opacity: 0.4,
@@ -50,7 +50,7 @@ export default ({ children }) => (
             },
             move: {
                 enable: true,
-                speed: 6,
+                speed: 0,
                 direction: 'top',
                 random: true,
                 straight: true,
@@ -67,11 +67,11 @@ export default ({ children }) => (
             events: {
                 onhover: {
                     enable: true,
-                    mode: 'repulse'
+                    mode: 'bubble'
                 },
                 onclick: {
                     enable: false,
-                    mode: 'push'
+                    mode: 'repulse'
                 },
                 resize: true
             },
@@ -84,8 +84,8 @@ export default ({ children }) => (
                 },
                 bubble: {
                     distance: 400,
-                    size: 6,
-                    duration: 2,
+                    size: 10,
+                    duration: 1,
                     opacity: 0.1,
                     speed: 1
                 },

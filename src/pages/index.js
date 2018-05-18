@@ -1,6 +1,7 @@
 import React from "react"
 import Container from "../components/container";
 import Particles from "../components/particles";
+import ParticlesBottom from "../components/particlesBottom";
 import styles from "./index.module.css";
 import hexagonStyles from "./hexagon.css";
 import onscroll from "../utils/onscroll.js"
@@ -40,7 +41,7 @@ export default ({ data }) =>
             <div className={styles.dark}>
                 <div className={styles.contentWork}>
                     <div className={styles.cropping}>
-                        <img className={styles.workImage} onClick={() => onclick('https://itunes.apple.com/us/app/badoo-the-dating-app/id351331194?mt=8')} src={BadooImage} alt=""></img>
+                        <img className={styles.workImage} onClick={() => onclick('https://www.youtube.com/watch?v=FwiQ3TCWptU')} src={BadooImage} alt=""></img>
                         {/* <div className={styles.hexagonContainer}>
                             <div className={styles.hexagon}></div>
                         </div> */}
@@ -62,7 +63,9 @@ export default ({ data }) =>
             </div>
         </div>
 
-        <div className={styles.ft}>Item4</div>
+        <div className={styles.ft}>
+            <ParticlesBottom/>
+        </div>
     </Container>
 
 window.onload = function () {

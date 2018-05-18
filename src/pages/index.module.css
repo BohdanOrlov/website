@@ -25,7 +25,7 @@ body {
     background-color: #F44A52;
     grid-area: ft;
     height: 100vh;
-    
+    position: relative;
 }
 
 .name {
@@ -168,6 +168,7 @@ body {
 
 .workImage:hover {
     transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    cursor: zoom-in;
 }
 
 .cropping {
@@ -195,17 +196,6 @@ body {
     
 }
 
-.particles {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    top: 0;
-    /* display: block; */
-    /* box-sizing: border-box; */
-    /* left: 0;
-    top: 0; */
-}
 
 .hexagonContainer {
     background: rgba(172, 255, 47, 0.411);
