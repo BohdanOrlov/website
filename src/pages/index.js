@@ -5,14 +5,12 @@ import ParticlesBottom from "../components/particlesBottom";
 import styles from "./index.module.css";
 import hexagonStyles from "./hexagon.css";
 import onscroll from "../utils/onscroll.js"
-import onclick from "../utils/onClick.js";
+import openURL from "../utils/openURL.js";
 import lastNameShuffling from "../utils/lastNameShuffling";
 import PhotoImage from "./content/resources/hexagon.png"
 import BadooImage from "./content/resources/work/Badoo.png"
 import ChappyImage from "./content/resources/work/Chappy.png"
 import onefinestayImage from "./content/resources/work/onefinestay.png"
-
-
 
 export default ({ data }) =>
     <Container>
@@ -20,7 +18,7 @@ export default ({ data }) =>
         <div className={styles.hd}>
             <h1 className={styles.name}>Bohdan</h1>
             <h1 className={styles.name} id="variableLastName"></h1>
-            <Particles/>
+            <Particles />
         </div>
 
         <div className={styles.ct}>
@@ -41,7 +39,7 @@ export default ({ data }) =>
             <div className={styles.dark}>
                 <div className={styles.contentWork}>
                     <div className={styles.cropping}>
-                        <img className={styles.workImage} onClick={() => onclick('https://www.youtube.com/watch?v=FwiQ3TCWptU')} src={BadooImage} alt=""></img>
+                        <img className={styles.workImage} onClick={() => openURL('https://www.youtube.com/watch?v=FwiQ3TCWptU')} src={BadooImage} alt=""></img>
                         {/* <div className={styles.hexagonContainer}>
                             <div className={styles.hexagon}></div>
                         </div> */}
@@ -64,7 +62,15 @@ export default ({ data }) =>
         </div>
 
         <div className={styles.ft}>
-            <ParticlesBottom/>
+            <ParticlesBottom />
+            <div className={styles.socials}>
+                <div className={styles.hexagon}><div className={styles.github} onClick={() => openURL('https://github.com/BohdanOrlov')}/></div>
+                <div className={styles.hexagon}><div className={styles.medium} onClick={() => openURL('https://medium.com/@borlov')}/></div>
+                <div className={styles.hexagon}><div className={styles.twitter} onClick={() => openURL('https://twitter.com/bohdan_orlov')}/></div>
+                <div className={styles.hexagon}><div className={styles.facebook} onClick={() => openURL('https://www.facebook.com/bohdan.orlov')}/></div>
+                <div className={styles.hexagon}><div className={styles.linkedIn} onClick={() => openURL('https://www.linkedin.com/in/bohdan-orlov-3a090255')}/></div>
+                {/* <div className={styles.hexagon}><i className={`${styles.fa} ${styles.twitter}`}></i></div> */}
+            </div>
         </div>
     </Container>
 
@@ -72,6 +78,8 @@ window.onload = function () {
     window.onscroll = onscroll
     lastNameShuffling()
 };
+
+
 
 export const query = graphql`
     query IndexQuery {

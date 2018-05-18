@@ -208,7 +208,7 @@ body {
     width: 100%;
     z-index: 300;
 }
-
+/* 
 .hexagon {
     background: black;
     height: 60px;
@@ -254,4 +254,151 @@ body {
         -ms-transform: scale(1.5);
          -o-transform: scale(1.5);
             transform: scale(1.5);
+} */
+
+.socials {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    /* grid-auto-columns: 100px; */
+    /* grid-auto-rows: 100px; */
+  }
+
+.twitter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    padding-top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    -webkit-mask: url(https://unpkg.com/simple-icons@latest/icons/twitter.svg) no-repeat center;
+    mask-image: url(https://unpkg.com/simple-icons@latest/icons/twitter.svg) no-repeat center;
+  }
+
+  .medium {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    padding-top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    -webkit-mask: url(https://unpkg.com/simple-icons@latest/icons/medium.svg) no-repeat center;
+    mask-image: url(https://unpkg.com/simple-icons@latest/icons/medium.svg) no-repeat center;
+  }
+
+
+.github {
+position: absolute;
+left: 50%;
+top: 50%;
+width: 50%;
+padding-top: 50%;
+transform: translate(-50%, -50%);
+background-color: white;
+-webkit-mask: url(https://unpkg.com/simple-icons@latest/icons/github.svg) no-repeat center;
+mask-image: url(https://unpkg.com/simple-icons@latest/icons/github.svg) no-repeat center;
 }
+
+.facebook {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    padding-top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    -webkit-mask: url(https://unpkg.com/simple-icons@latest/icons/facebook.svg) no-repeat center;
+    mask-image: url(https://unpkg.com/simple-icons@latest/icons/facebook.svg) no-repeat center;
+    }
+.linkedIn {
+position: absolute;
+left: 50%;
+top: 50%;
+width: 50%;
+padding-top: 50%;
+transform: translate(-50%, -50%);
+background-color: white;
+-webkit-mask: url(https://unpkg.com/simple-icons@latest/icons/linkedin.svg) no-repeat center;
+mask-image: url(https://unpkg.com/simple-icons@latest/icons/linkedin.svg) no-repeat center;
+}
+  
+  #itunes{
+    width: 49px;
+    height: 49px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .fa.fa-music{
+    font-size: 32px;
+    position: relative;
+    bottom: 8px;
+    right: 1px;
+    padding: 3px;
+  }
+  
+  .hexagon {
+      /* margin: 20pt; */
+      /* padding: 20pt; */
+      margin-left: 20pt;
+      margin-right: 20pt;
+      width: 100px;
+      height: 60px;
+      background: #292929;
+      position: relative;
+     text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .hexagon:before {
+      content: "";
+      position: absolute;
+      top: -25px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 25px solid #292929;
+      -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .hexagon:after {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 25px solid #292929;
+      -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hexagon:hover{
+    /* background: #EC008C; */
+    transform: scale(1.2);
+  }
+  
+  .hexagon:hover:after{
+    /* border-top: 25px solid #EC008C; */
+  }
+  .hexagon:hover:before{
+    /* border-bottom: 25px solid #EC008C; */
+  }
