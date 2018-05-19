@@ -262,8 +262,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-    /* grid-auto-columns: 100px; */
-    /* grid-auto-rows: 100px; */
   }
 
 .twitter {
@@ -343,10 +341,8 @@ mask-image: url(https://unpkg.com/simple-icons@latest/icons/linkedin.svg) no-rep
   }
   
   .hexagon {
-      /* margin: 20pt; */
-      /* padding: 20pt; */
-      margin-left: 20pt;
-      margin-right: 20pt;
+      margin-left: 2vw;
+      margin-right: 2vw;
       width: 100px;
       height: 60px;
       background: #292929;
