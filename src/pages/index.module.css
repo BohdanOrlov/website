@@ -149,8 +149,12 @@ body {
 
 
 
-.content {
+.aboutContent {
     margin: 6rem;
+}
+
+.content {
+    margin: 2rem;
 }
 
 .contentWork {

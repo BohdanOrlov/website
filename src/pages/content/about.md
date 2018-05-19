@@ -1,57 +1,29 @@
-### About me
-
-To make this possible, Gatsby supports transformer plugins which take raw content from source plugins and transform it into something more usable.
-
-For example, Markdown files. Markdown is nice to write in but when you build a page with it, you need the Markdown to be HTML.
-To make this possible, Gatsby supports transformer plugins which take raw content from source plugins and transform it into something more usable.
-
-**For example, Markdown files.** 
-Markdown is nice to write in but when you build a page with it, you need the Markdown to be HTML.
-To make this possible, Gatsby supports transformer plugins which take raw content from source plugins and transform it into something more usable.
-
-For example, Markdown files. Markdown is nice to write in but when you build a page with it, you need the Markdown to be HTML.
-To make this possible, Gatsby supports transformer plugins which take raw content from source plugins and transform it into something more usable.
-
-For example, Markdown files. Markdown is nice to write in but when you build a page with it, you need the Markdown to be HTML.
+###I am a iOS Engineer and a Team Lead from Ukraine living in London
 
 
-**For example, Markdown files.** 
-Markdown is nice to write in but when you build a page with it, you need the Markdown to be HTML.
-To make this possible, Gatsby supports transformer plugins which take raw content from source plugins and transform it into something more usable.
+**Timely** delivered **quality** iOS apps are what I do the best owing to the combination of inborn **perfectionism** and **laziness**. These partly contradicting traits are often very fruitful. In fact, many **pragmatic, beautiful and fitting solutions** appeared due to this **weird** tandem.
 
-For example, Markdown files. Markdown is nice to write in but when you build a page with it, you need the Markdown to be HTML.
-To make this possible, Gatsby supports transformer plugins which take raw content from source plugins and transform it into something more usable.
+At the same time, I realise that **achieving** something **significant** takes a **coordinated** effort of many **people**, so this is where my interest in **leading people** comes from. 
 
-For example, Markdown files. Markdown is nice to write in but when you build a page with it, you need the Markdown to be HTML.
+Chasing **better** place to improve my engineering **skills** and supporting **community** eventually brought me to **London**. 
 
+###iOS Engineer
 
-**For example, Markdown files.** 
-Markdown is nice to write in but when you build a page with it, you need the Markdown to be HTML.
-To make this possible, Gatsby supports transformer plugins which take raw content from source plugins and transform it into something more usable.
+I've started as an **intern** working on a greenfield iOS app and very quickly I could prove that I can **deliver** the app.
 
-For example, Markdown files. Markdown is nice to write in but when you build a page with it, you need the Markdown to be HTML.
-To make this possible, Gatsby supports transformer plugins which take raw content from source plugins and transform it into something more usable.
+I **dived** into iOS platform, and after a couple of years I ended up graduating from the company making **the biggest dating app** in the world with a lot of engineering experience and friends over my shoulders.
 
-For example, Markdown files. Markdown is nice to write in but when you build a page with it, you need the Markdown to be HTML.
+###iOS Team Lead
 
+As I started to **grow and influence** less experienced developers I've realised that I have to do this in a **structured** way, so I've started to **write** articles about software design and eventually **talk** about it publicly.
 
+My natural next step was to take formal **responsibility** **over growth** of an iOS team. This role challenges me from a completely different side and keeps me **growing as a human**.
 
-**For example, Markdown files.** 
-Markdown is nice to write in but when you build a page with it, you need the Markdown to be HTML.
-To make this possible, Gatsby supports transformer plugins which take raw content from source plugins and transform it into something more usable.
+My beliefs consist of:
 
-For example, Markdown files. Markdown is nice to write in but when you build a page with it, you need the Markdown to be HTML.
-To make this possible, Gatsby supports transformer plugins which take raw content from source plugins and transform it into something more usable.
+- **reason** over passion
+- focus on the final **result**
+- **improvement** of means of achieving
+- **minimisation** of engineering **elitism**
+- **sharing** **knowledge** by default
 
-For example, Markdown files. Markdown is nice to write in but when you build a page with it, you need the Markdown to be HTML.
-
-
-
-**For example, Markdown files.** 
-Markdown is nice to write in but when you build a page with it, you need the Markdown to be HTML.
-To make this possible, Gatsby supports transformer plugins which take raw content from source plugins and transform it into something more usable.
-
-For example, Markdown files. Markdown is nice to write in but when you build a page with it, you need the Markdown to be HTML.
-To make this possible, Gatsby supports transformer plugins which take raw content from source plugins and transform it into something more usable.
-
-For example, Markdown files. Markdown is nice to write in but when you build a page with it, you need the Markdown to be HTML.
