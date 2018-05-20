@@ -1,5 +1,7 @@
 import React from "react"
 import Container from "../components/container";
+import Navigation from "../components/navigation";
+import ContentItem from "../components/contentItemWithImage";
 import Particles from "../components/particles";
 import ParticlesBottom from "../components/particlesBottom";
 import styles from "./index.module.css";
@@ -8,6 +10,9 @@ import onscroll from "../utils/onscroll.js"
 import openURL from "../utils/openURL.js";
 import lastNameShuffling from "../utils/lastNameShuffling";
 import PhotoImage from "./content/resources/hexagon.png"
+
+import architectureImage from "./content/resources/outreach/architecture.jpeg"
+import roadmapImage from "./content/resources/outreach/roadmap.png"
 
 import moonpigImage from "./content/resources/work/moonpig.png"
 import chappyImage from "./content/resources/work/chappy.png"
@@ -18,19 +23,21 @@ import tptImage from "./content/resources/work/tpt.png"
 
 export default ({ data }) => {
     // console.log(data.about.edges[0])
-
     return <Container>
-        
+
         <div className={styles.hd}>
             <h1 className={styles.name}>Bohdan</h1>
             <h1 className={styles.name} id="variableLastName"></h1>
             <Particles />
+            <div className={styles.navigationContainer}>
+                <Navigation />
+            </div>
         </div>
 
         <div className={styles.ct}>
             <div className={styles.header}>
                 <div className={styles.headerContainer}>
-                    <h1 className={styles.headerTitle}>About</h1>
+                    <h1 className={styles.headerTitle} id="about">About</h1>
                     <img src={PhotoImage} className={styles.photoImage} alt="Bohdan Orlov" />
                 </div>
             </div>
@@ -39,11 +46,12 @@ export default ({ data }) => {
             </div>
             <div className={styles.header2}>
                 <div className={styles.headerContainer}>
-                    <h1 className={styles.headerTitleDark}>Outreach</h1>
+                    <h1 className={styles.headerTitleDark} id="outreach">Outreach</h1>
                 </div>
             </div>
             <div className={styles.dark}>
-                
+                <ContentItem data= {{ image: architectureImage, url: 'https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52', html: data.architecture.edges[0].node.html }}/>
+                <ContentItem data= {{ image: roadmapImage, url: 'https://github.com/BohdanOrlov/iOS-Developer-Roadmap', html: data.roadmap.edges[0].node.html }}/>
             </div>
             <div className={styles.header3}>
                 <div className={styles.headerContainer}>
@@ -51,36 +59,18 @@ export default ({ data }) => {
                 </div>
             </div>
             <div >
-            <div className={styles.contentWork}>
-                    <div className={styles.cropping}>
-                        <img className={styles.workImage} src={moonpigImage} onClick={() => openURL('https://www.youtube.com/watch?v=YnoFQWrRwYo')} alt=""></img>
-                    </div>
-                    <div className={styles.content} dangerouslySetInnerHTML={{ __html: data.moonpig.edges[0].node.html }} />
-                    <div className={styles.cropping}>
-                        <img className={styles.workImage} src={chappyImage} onClick={() => openURL('https://www.youtube.com/watch?v=6d8XJ3LaFlM')} alt="" />
-                    </div>
-                    <div className={styles.content} dangerouslySetInnerHTML={{ __html: data.chappy.edges[0].node.html }} />
-                    <div className={styles.cropping}>
-                        <img className={styles.workImage} src={badooImage} onClick={() => openURL('https://www.youtube.com/watch?v=FwiQ3TCWptU')} alt=""></img>
-                    </div>
-                    <div className={styles.content} dangerouslySetInnerHTML={{ __html: data.badoo.edges[0].node.html }} />
-                    <div className={styles.cropping}>
-                        <img className={styles.workImage} src={onefinestayImage} onClick={() => openURL('https://www.youtube.com/watch?v=DZfMgtEyRCg')} alt="" />
-                    </div>
-                    <div className={styles.content} dangerouslySetInnerHTML={{ __html: data.onefinestay.edges[0].node.html }} />
-                    <div className={styles.cropping}>
-                        <img className={styles.workImage} src={whooleyImage} onClick={() => openURL('http://whooley.com/what-are-you-up-for/')} alt=""></img>
-                    </div>
-                    <div className={styles.content} dangerouslySetInnerHTML={{ __html: data.whooley.edges[0].node.html }} />
-                    <div className={styles.cropping}>
-                        <img className={styles.workImage} src={tptImage} onClick={() => openURL('https://www.youtube.com/watch?v=E4b1FLUMRXo')} alt="" />
-                    </div>
-                    <div className={styles.content} dangerouslySetInnerHTML={{ __html: data.tpt.edges[0].node.html }} />
+                <div className={styles.contentWork} id="work">
+                    <ContentItem data= {{ image: moonpigImage, url: 'https://www.youtube.com/watch?v=YnoFQWrRwYo', html: data.moonpig.edges[0].node.html }}/>
+                    <ContentItem data= {{ image: chappyImage, url: 'https://www.youtube.com/watch?v=6d8XJ3LaFlM', html: data.chappy.edges[0].node.html }}/>
+                    <ContentItem data= {{ image: badooImage, url: 'https://www.youtube.com/watch?v=FwiQ3TCWptU', html: data.badoo.edges[0].node.html }}/>
+                    <ContentItem data= {{ image: onefinestayImage, url: 'https://www.youtube.com/watch?v=DZfMgtEyRCg', html: data.onefinestay.edges[0].node.html }}/>
+                    <ContentItem data= {{ image: whooleyImage, url: 'http://whooley.com/what-are-you-up-for/', html: data.whooley.edges[0].node.html }}/>
+                    <ContentItem data= {{ image: tptImage, url: 'https://www.youtube.com/watch?v=E4b1FLUMRXo', html: data.tpt.edges[0].node.html }}/>
                 </div>
             </div>
         </div>
 
-        <div className={styles.ft}>
+        <div className={styles.ft} id="contact">
             <ParticlesBottom />
             <div className={styles.socials}>
                 <div className={styles.hexagon}><div className={styles.github} onClick={() => openURL('https://github.com/BohdanOrlov')} /></div>
@@ -99,7 +89,6 @@ window.onload = function () {
 };
 
 
-
 export const query = graphql`
     query IndexQuery {
         about:  allMarkdownRemark(
@@ -112,6 +101,26 @@ export const query = graphql`
                         }
                     }
                 }
+        architecture: allMarkdownRemark(
+            filter: {fileAbsolutePath: {regex: "/(architecture)\\.md$/"}}, 
+            limit: 1
+        ) {
+            edges {
+                node {
+                    html
+                }
+            }
+        }
+        roadmap: allMarkdownRemark(
+            filter: {fileAbsolutePath: {regex: "/(roadmap)\\.md$/"}}, 
+            limit: 1
+        ) {
+            edges {
+                node {
+                    html
+                }
+            }
+        }
         work: allMarkdownRemark(
                     filter: {fileAbsolutePath: {regex: "/(work)\\.md$/"}}, 
                     limit: 1

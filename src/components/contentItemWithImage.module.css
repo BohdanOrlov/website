@@ -1,0 +1,19 @@
+.content {
+    margin: 2rem;
+}
+
+.workImage {
+    display: block;
+    margin: 0;
+    transition: transform 20s; /* Animation */
+}
+
+.workImage:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    cursor: zoom-in;
+}
+
+.cropping {
+    position: relative;
+    overflow: hidden;    
+}

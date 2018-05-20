@@ -6,7 +6,7 @@ export default ({ children }) => (
     <Particles className={styles.particles} params={{
         particles: {
             number: {
-                value: 80,
+                value: 40,
             },
             color: {
                 value: '#ffffff'
@@ -66,7 +66,7 @@ export default ({ children }) => (
             detect_on: 'window',
             events: {
                 onhover: {
-                    enable: true,
+                    enable: false,
                     mode: 'repulse'
                 },
                 onclick: {

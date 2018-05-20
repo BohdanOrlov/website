@@ -1,12 +1,12 @@
 import React from "react";
 import Particles from 'react-particles-js';
-import styles from "./particles.module.css";
+import styles from "./particlesBottom.module.css";
 
 export default ({ children }) => (
     <Particles className={styles.particles} params={{
         particles: {
             number: {
-                value: 80,
+                value: 40,
             },
             color: {
                 value: '#ffffff'
@@ -43,7 +43,7 @@ export default ({ children }) => (
             },
             line_linked: {
                 enable: true,
-                distance: 150,
+                distance: 200,
                 color: '#ffffff',
                 opacity: 0.4,
                 width: 1

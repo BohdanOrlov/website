@@ -402,3 +402,12 @@ mask-image: url(https://unpkg.com/simple-icons@latest/icons/linkedin.svg) no-rep
   .hexagon:hover:before{
     /* border-bottom: 25px solid #EC008C; */
   }
+
+  .navigationContainer {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    /* width: 50%;
+    padding-top: 50%; */
+    transform: translate(-50%, -50%);
+  }
