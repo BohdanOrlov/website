@@ -2,7 +2,7 @@
 
 .navigation ul,.navigation li {
     list-style-type:none;
-    display:inline;
+    display: inline-flex;
     margin:0px 3pt;
     color: var(--accent-color);
 }

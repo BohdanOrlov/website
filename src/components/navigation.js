@@ -12,6 +12,5 @@ export default ({ children }) => (
             <li>|</li>
             <li><a href="#contact">CONTACT</a></li>
         </ul>
-        <br />
     </div>
 );
