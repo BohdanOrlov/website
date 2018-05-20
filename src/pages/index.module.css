@@ -31,7 +31,7 @@
 .navigationContainer {
     position: absolute;
     top: 10pt;
-    left: 50%;  
+    left: 50%;
     transform: translate(-50%, 0%);
 }
 
@@ -232,6 +232,9 @@
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
 }
 
 .hexagon:before {
@@ -244,11 +247,6 @@
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-bottom: 25px solid var(--dark-color);
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
 }
 
 .hexagon:after {
@@ -261,11 +259,6 @@
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-top: 25px solid var(--dark-color);
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
 }
 
 .hexagon:hover {

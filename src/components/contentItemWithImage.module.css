@@ -11,11 +11,14 @@
 .workImage {
     display: block;
     margin: 0;
-    transition: transform 20s; /* Animation */
+    transition: transform 20s ease-out; /* Animation */
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
 }
 
 .workImage:hover {
-    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.2);
     cursor: zoom-in;
 }
 
