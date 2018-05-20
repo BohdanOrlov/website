@@ -1,5 +1,11 @@
+@import "shared.module.css";
+
 .content {
     margin: 2rem;
+}
+
+.content a:link, a:visited {
+    color: var(--accent-color);
 }
 
 .workImage {

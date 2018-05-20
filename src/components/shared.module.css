@@ -1,5 +1,23 @@
-:root {
+/* :root {
     --accent-color: #F44A52;
     --dark-color: #292929;
     --light-color: white;
+  } */
+
+  /* :root {
+    --accent-color: #74D6DB;
+    --dark-color: #2A2B2A;
+    --light-color: #F9F9FB;
+  } */
+
+  :root {
+    --accent-color: #F4CF49;
+    --dark-color: #292929;
+    --light-color: #F9F9FB;
+  }
+
+  :root {
+    --accent-color: #FF4C55;
+    --dark-color: #292929;
+    --light-color: #F9F9F9;
   }

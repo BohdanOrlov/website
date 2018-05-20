@@ -1,4 +1,4 @@
-### iOS Architecture Blog
+### iOS Architecture
 
 I [write about software design in iOS](https://medium.com/@borlov). 
 

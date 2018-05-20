@@ -1,6 +1,5 @@
 @import "../components/shared.module.css";
-
-body {
+.body {
     margin: 0px;
     padding: 0px;
 }
@@ -12,15 +11,14 @@ body {
     display: grid;
     grid-row-gap: 10rem;
     grid-template-rows: min-content;
-    
-  }
+}
 
 .ct {
     background-color: var(--light-color);
     grid-area: ct;
     display: grid;
     /* grid-template-rows: minmax(100vh, auto); */
-    grid-auto-rows: minmax(100vh, auto); 
+    grid-auto-rows: minmax(100vh, auto);
 }
 
 .ft {
@@ -28,6 +26,15 @@ body {
     grid-area: ft;
     height: 100vh;
     position: relative;
+}
+
+.navigationContainer {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    /* width: 50%;
+    padding-top: 50%; */
+    transform: translate(-50%, -50%);
 }
 
 .name {
@@ -84,7 +91,6 @@ body {
     opacity: 0.0 !important;
 }
 
-
 .header {
     background-color: var(--accent-color);
     position: relative;
@@ -109,25 +115,14 @@ body {
     z-index: 100;
 }
 
-
-.headerImage {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
 .photoImage {
     position: absolute;
     margin: auto;
     left: 0;
     right: 0;
     width: 8rem;
-    transform:  translate(+0%, -50%);
+    transform: translate(+0%, -50%);
 }
-
 
 .headerTitle {
     font-family: 'Sacramento';
@@ -149,72 +144,13 @@ body {
     transform: translate(-50%, -50%);
 }
 
-
-
 .aboutContent {
     margin: 6rem;
-}
-
-
-
-.contentWork {
-    display: grid;
-    grid-gap: 0;
-    grid-auto-rows: auto;
-    /* width: 100%; */
-}
-
-.content {
-    margin: 2rem;
-}
-
-.workImage {
-    display: block;
-    margin: 0;
-    transition: transform 20s; /* Animation */
-}
-
-.workImage:hover {
-    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    cursor: zoom-in;
-}
-
-.cropping {
-    position: relative;
-    overflow: hidden;    
 }
 
 .dark {
     background: var(--dark-color);
     color: var(--light-color);
-}
-
-@media screen and (orientation:landscape) {
-    .headerContainer {
-        width: 50vw;
-    }
-    .ct {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .photoImage {
-        left: auto  ;
-        right: 0;
-        transform:  translate(+50%, +50%);
-    }
-    
-}
-
-
-.hexagonContainer {
-    background: rgba(172, 255, 47, 0.411);
-    /* display: inline-block; */
-    position: absolute ;
-    pointer-events: none;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 300;
 }
 
 .socials {
@@ -223,7 +159,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-  }
+}
 
 .twitter {
     position: absolute;
@@ -235,9 +171,9 @@ body {
     background-color: var(--light-color);
     -webkit-mask: url(https://unpkg.com/simple-icons@latest/icons/twitter.svg) no-repeat center;
     mask-image: url(https://unpkg.com/simple-icons@latest/icons/twitter.svg) no-repeat center;
-  }
+}
 
-  .medium {
+.medium {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -247,19 +183,18 @@ body {
     background-color: var(--light-color);
     -webkit-mask: url(https://unpkg.com/simple-icons@latest/icons/medium.svg) no-repeat center;
     mask-image: url(https://unpkg.com/simple-icons@latest/icons/medium.svg) no-repeat center;
-  }
-
+}
 
 .github {
-position: absolute;
-left: 50%;
-top: 50%;
-width: 50%;
-padding-top: 50%;
-transform: translate(-50%, -50%);
-background-color: var(--light-color);
--webkit-mask: url(https://unpkg.com/simple-icons@latest/icons/github.svg) no-repeat center;
-mask-image: url(https://unpkg.com/simple-icons@latest/icons/github.svg) no-repeat center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    padding-top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--light-color);
+    -webkit-mask: url(https://unpkg.com/simple-icons@latest/icons/github.svg) no-repeat center;
+    mask-image: url(https://unpkg.com/simple-icons@latest/icons/github.svg) no-repeat center;
 }
 
 .facebook {
@@ -272,99 +207,92 @@ mask-image: url(https://unpkg.com/simple-icons@latest/icons/github.svg) no-repea
     background-color: var(--light-color);
     -webkit-mask: url(https://unpkg.com/simple-icons@latest/icons/facebook.svg) no-repeat center;
     mask-image: url(https://unpkg.com/simple-icons@latest/icons/facebook.svg) no-repeat center;
-    }
-.linkedIn {
-position: absolute;
-left: 50%;
-top: 50%;
-width: 50%;
-padding-top: 50%;
-transform: translate(-50%, -50%);
-background-color: var(--light-color);
--webkit-mask: url(https://unpkg.com/simple-icons@latest/icons/linkedin.svg) no-repeat center;
-mask-image: url(https://unpkg.com/simple-icons@latest/icons/linkedin.svg) no-repeat center;
 }
-  
-  #itunes{
-    width: 49px;
-    height: 49px;
-    border: 3px solid var(--light-color);
-    border-radius: 50%;
+
+.linkedIn {
     position: absolute;
-  }
-  
-  .fa.fa-music{
-    font-size: 32px;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    padding-top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--light-color);
+    -webkit-mask: url(https://unpkg.com/simple-icons@latest/icons/linkedin.svg) no-repeat center;
+    mask-image: url(https://unpkg.com/simple-icons@latest/icons/linkedin.svg) no-repeat center;
+}
+
+.hexagon {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    width: 100px;
+    height: 60px;
+    background: var(--dark-color);
     position: relative;
-    bottom: 8px;
-    right: 1px;
-    padding: 3px;
-  }
-  
-  .hexagon {
-      margin-left: 2vw;
-      margin-right: 2vw;
-      width: 100px;
-      height: 60px;
-      background: var(--dark-color);
-      position: relative;
-     text-align: center;
+    text-align: center;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-  }
-  .hexagon:before {
-      content: "";
-      position: absolute;
-      top: -25px;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-left: 50px solid transparent;
-      border-right: 50px solid transparent;
-      border-bottom: 25px solid var(--dark-color);
-      -webkit-transition: all 0.3s ease-in-out;
+}
+
+.hexagon:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid var(--dark-color);
+    -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-  }
-  .hexagon:after {
-      content: "";
-      position: absolute;
-      bottom: -25px;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-left: 50px solid transparent;
-      border-right: 50px solid transparent;
-      border-top: 25px solid var(--dark-color);
-      -webkit-transition: all 0.3s ease-in-out;
+}
+
+.hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid var(--dark-color);
+    -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-  }
-  
-  .hexagon:hover{
+}
+
+.hexagon:hover {
     /* background: #EC008C; */
     transform: scale(1.2);
-  }
-  
-  .hexagon:hover:after{
-    /* border-top: 25px solid #EC008C; */
-  }
-  .hexagon:hover:before{
-    /* border-bottom: 25px solid #EC008C; */
-  }
+}
 
-  .navigationContainer {
-    position: absolute;
-    left: 50%;
-    top: 5%;
-    /* width: 50%;
-    padding-top: 50%; */
-    transform: translate(-50%, -50%);
-  }
+.hexagon:hover:after {
+    /* border-top: 25px solid #EC008C; */
+}
+
+.hexagon:hover:before {
+    /* border-bottom: 25px solid #EC008C; */
+}
+
+@media screen and (orientation:landscape) {
+    .headerContainer {
+        width: 50vw;
+    }
+    .ct {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .photoImage {
+        left: auto;
+        right: 0;
+        transform: translate(+50%, +50%);
+    }
+}

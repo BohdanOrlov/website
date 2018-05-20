@@ -59,14 +59,12 @@ export default ({ data }) => {
                 </div>
             </div>
             <div >
-                <div className={styles.contentWork} id="work">
-                    <ContentItem data= {{ image: moonpigImage, url: 'https://www.youtube.com/watch?v=YnoFQWrRwYo', html: data.moonpig.edges[0].node.html }}/>
-                    <ContentItem data= {{ image: chappyImage, url: 'https://www.youtube.com/watch?v=6d8XJ3LaFlM', html: data.chappy.edges[0].node.html }}/>
-                    <ContentItem data= {{ image: badooImage, url: 'https://www.youtube.com/watch?v=FwiQ3TCWptU', html: data.badoo.edges[0].node.html }}/>
-                    <ContentItem data= {{ image: onefinestayImage, url: 'https://www.youtube.com/watch?v=DZfMgtEyRCg', html: data.onefinestay.edges[0].node.html }}/>
-                    <ContentItem data= {{ image: whooleyImage, url: 'http://whooley.com/what-are-you-up-for/', html: data.whooley.edges[0].node.html }}/>
-                    <ContentItem data= {{ image: tptImage, url: 'https://www.youtube.com/watch?v=E4b1FLUMRXo', html: data.tpt.edges[0].node.html }}/>
-                </div>
+                <ContentItem data= {{ image: moonpigImage, url: 'https://www.youtube.com/watch?v=YnoFQWrRwYo', html: data.moonpig.edges[0].node.html }}/>
+                <ContentItem data= {{ image: chappyImage, url: 'https://www.youtube.com/watch?v=6d8XJ3LaFlM', html: data.chappy.edges[0].node.html }}/>
+                <ContentItem data= {{ image: badooImage, url: 'https://www.youtube.com/watch?v=FwiQ3TCWptU', html: data.badoo.edges[0].node.html }}/>
+                <ContentItem data= {{ image: onefinestayImage, url: 'https://www.youtube.com/watch?v=DZfMgtEyRCg', html: data.onefinestay.edges[0].node.html }}/>
+                <ContentItem data= {{ image: whooleyImage, url: 'http://whooley.com/what-are-you-up-for/', html: data.whooley.edges[0].node.html }}/>
+                <ContentItem data= {{ image: tptImage, url: 'https://www.youtube.com/watch?v=E4b1FLUMRXo', html: data.tpt.edges[0].node.html }}/>
             </div>
         </div>
 
