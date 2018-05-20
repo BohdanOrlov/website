@@ -1,18 +1,20 @@
+@import "../components/shared.module.css";
+
 .navigation ul,.navigation li {
     list-style-type:none;
     display:inline;
     margin:0px 3pt;
-    color: #F44A52;
+    color: var(--accent-color);
 }
 
 .navigation a:link, .navigation a:visited, .navigation a:active {
 font-size:15px;
-color: #F44A52;
+color: var(--accent-color);;
 padding:5px 5px 10pt 5px;
 text-decoration: none;
 }
 
 .navigation a:hover {
-border-bottom:2pt solid white;
-color:#F44A52;
+border-bottom:2pt solid var(--light-color);
+color:var(--accent-color);
 }

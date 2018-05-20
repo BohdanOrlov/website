@@ -84,6 +84,7 @@ export default ({ data }) => {
     </Container>
 }
 window.onload = function () {
+    onscroll()
     window.onscroll = onscroll
     lastNameShuffling()
 };
