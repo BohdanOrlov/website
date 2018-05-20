@@ -26,7 +26,7 @@ export default ({ data }) => {
     return <Container>
 
         <div className={styles.hd}>
-            <h1 className={styles.name}>Bohdan</h1>
+            <h1 className={styles.name}>BOHDAN</h1>
             <h1 className={styles.name} id="variableLastName"></h1>
             <Particles />
             <div className={styles.navigationContainer}>
@@ -37,7 +37,7 @@ export default ({ data }) => {
         <div className={styles.ct}>
             <div className={styles.header}>
                 <div className={styles.headerContainer}>
-                    <h1 className={styles.headerTitle} id="about">About</h1>
+                    <h1 className={`${styles.headerTitle} ${styles.lightColor}`} id="about">About</h1>
                     <img src={PhotoImage} className={styles.photoImage} alt="Bohdan Orlov" />
                 </div>
             </div>
@@ -46,7 +46,7 @@ export default ({ data }) => {
             </div>
             <div className={styles.header2}>
                 <div className={styles.headerContainer}>
-                    <h1 className={styles.headerTitleDark} id="outreach">Outreach</h1>
+                    <h1 className={`${styles.headerTitle} ${styles.darkColor}`} id="outreach">Outreach</h1>
                 </div>
             </div>
             <div className={styles.dark}>
@@ -55,7 +55,7 @@ export default ({ data }) => {
             </div>
             <div className={styles.header3}>
                 <div className={styles.headerContainer}>
-                    <h1 className={styles.headerTitle}>Work</h1>
+                    <h1 className={`${styles.headerTitle} ${styles.lightColor}`} id="work">Work</h1>
                 </div>
             </div>
             <div >

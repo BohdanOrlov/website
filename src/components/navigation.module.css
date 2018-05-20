@@ -10,7 +10,7 @@
 .navigation a:link, .navigation a:visited, .navigation a:active {
 font-size:15px;
 color: var(--accent-color);;
-padding:5px 5px 10pt 5px;
+padding:2pt 5px 10pt 5px;
 text-decoration: none;
 }
 

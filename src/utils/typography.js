@@ -5,32 +5,53 @@ import moragaTheme from "typography-theme-moraga";
 // moragaTheme.headerFontFamily = ['Sacramento']
 moragaTheme.headerColor = 'inherit'
 moragaTheme.googleFonts = [
-    {
-        name: 'Sacramento',
-        styles: [
-          '400',
-        ],
-    },
-    {
-      name: 'Montserrat',
-      styles: [
-        '700',
-      ],
-    },
-    {
-      name: 'Merriweather',
-      styles: [
-        '400',
-        '400i',
-        '700',
-        '700i',
-      ],
-    },
-  ],
-moragaTheme.overrideStyles = ({ adjustFontSizeTo, rhythm }, options, styles) => ({
+  {
+    name: 'Sacramento',
+    styles: [
+      '400',
+    ],
+  },
+  {
+    name: 'Londrina Outline',
+    styles: [
+      '400',
+    ],
+  },
+  {
+    name: 'Faster One',
+    styles: [
+      '400',
+    ],
+  },
+  {
+    name: 'Dawning of a New Day',
+    styles: [
+      '400',
+    ],
+  },
+  {
+    name: 'Stalemate',
+    styles: [
+      '400',
+    ],
+  },
+  {
+    name: 'Megrim',
+    styles: [
+      '400',
+    ],
+  },
+  {
+    name: 'Wire One',
+    styles: [
+      '400',
+    ],
+  },
+],
+  moragaTheme.overrideStyles = ({ adjustFontSizeTo, rhythm }, options, styles) => ({
     h1: {
-        // fontFamily: 'Dancing Script', 
-        ...adjustFontSizeTo('100px'),
+      // fontFamily: 'Dancing Script', 
+      ...adjustFontSizeTo('100px'),
     }
   })
 

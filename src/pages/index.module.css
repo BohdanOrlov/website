@@ -37,7 +37,7 @@
 
 .name {
     font-size: 8rem;
-    font-family: 'Montserrat';
+    font-family: 'Megrim';
     color: var(--light-color);
     position: relative;
     float: left;
@@ -45,29 +45,36 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    line-height: 6rem;
 }
 
 .lastName {
-    font-size: 8rem;
-    font-family: 'Montserrat';
+    font-family: 'Megrim';
     opacity: 0;
 }
 
 .engineer {
-    font-size: 8rem;
-    font-family: 'Sacramento';
+    font-family: 'Wire One';
+    opacity: 0;
+}
+
+.traveler {
+    font-family: 'Stalemate';
     opacity: 0;
 }
 
 .writer {
-    font-size: 8rem;
-    font-family: 'Montserrat';
+    font-family: 'Dawning of a New Day';
+    opacity: 0;
+}
+
+.rider {
+    font-family: 'Faster One';
     opacity: 0;
 }
 
 .speaker {
-    font-size: 8rem;
-    font-family: 'Montserrat';
+    font-family: 'Londrina Outline';
     opacity: 0;
 }
 
@@ -77,6 +84,9 @@
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
     opacity: 1.0 !important;
 }
 
@@ -86,6 +96,9 @@
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
     opacity: 0.0 !important;
 }
 
@@ -124,7 +137,7 @@
 
 .headerTitle {
     font-family: 'Sacramento';
-    color: var(--light-color);
+    font-size: 6rem;
     position: relative;
     float: left;
     top: 50%;
@@ -132,14 +145,13 @@
     transform: translate(-50%, -50%);
 }
 
-.headerTitleDark {
-    font-family: 'Sacramento';
+
+.lightColor {
+    color: var(--light-color);
+}
+
+.darkColor {
     color: var(--dark-color);
-    position: relative;
-    float: left;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .aboutContent {

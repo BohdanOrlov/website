@@ -2,15 +2,19 @@
 import styles from "../pages/index.module.css";
 
 var content = [
-    "Orlov",
-    "iOS engineer",
+    "ORLOV",
+    "iOS Engineer",
+    "Traveler",
     "Writer",
+    "Rider",
     "Speaker",
 ];
 var contentStyles = [
     styles.lastName,
     styles.engineer,
+    styles.traveler,
     styles.writer,
+    styles.rider,
     styles.speaker,
 ];
 var msgPtr = 0;
