@@ -27,7 +27,7 @@ export default ({ data }) => {
 
         <div className={styles.hd}>
             <h1 className={styles.name}>BOHDAN</h1>
-            <h1 className={styles.name} id="variableLastName"></h1>
+            <h1 className={`${styles.name} ${styles.lastNameCommon}`} id="variableLastName"></h1>
             <Particles />
             <div className={styles.navigationContainer}>
                 <Navigation />
@@ -36,17 +36,17 @@ export default ({ data }) => {
 
         <div className={styles.ct}>
             <div className={styles.header}>
-                <div className={styles.headerContainer}>
-                    <h1 className={`${styles.headerTitle} ${styles.lightColor}`} id="about">About</h1>
+                <div className={styles.headerContainer} id="about">
+                    <h1 className={`${styles.headerTitle} ${styles.lightColor}`}>About</h1>
                     <img src={PhotoImage} className={styles.photoImage} alt="Bohdan Orlov" />
                 </div>
             </div>
             <div>
-                <div className={styles.aboutContent} dangerouslySetInnerHTML={{ __html: data.about.edges[0].node.html }} />
+                <div className={styles.aboutContent} dangerouslySetInnerHTML={{ __html: data.about.edges[0].node.html }}/>
             </div>
             <div className={styles.header2}>
-                <div className={styles.headerContainer}>
-                    <h1 className={`${styles.headerTitle} ${styles.darkColor}`} id="outreach">Outreach</h1>
+                <div className={styles.headerContainer} id="outreach">
+                    <h1 className={`${styles.headerTitle} ${styles.darkColor}`}>Outreach</h1>
                 </div>
             </div>
             <div className={styles.dark}>
@@ -54,8 +54,8 @@ export default ({ data }) => {
                 <ContentItem data= {{ image: roadmapImage, url: 'https://github.com/BohdanOrlov/iOS-Developer-Roadmap', html: data.roadmap.edges[0].node.html }}/>
             </div>
             <div className={styles.header3}>
-                <div className={styles.headerContainer}>
-                    <h1 className={`${styles.headerTitle} ${styles.lightColor}`} id="work">Work</h1>
+                <div className={styles.headerContainer} id="work">
+                    <h1 className={`${styles.headerTitle} ${styles.lightColor}`}>Work</h1>
                 </div>
             </div>
             <div >
@@ -81,11 +81,13 @@ export default ({ data }) => {
         </div>
     </Container>
 }
-window.onload = function () {
-    onscroll()
-    window.onscroll = onscroll
-    lastNameShuffling()
-};
+if(typeof window !== 'undefined'){
+    window.onload = function () {
+        onscroll()
+        window.onscroll = onscroll
+        lastNameShuffling()
+    };
+} 
 
 
 export const query = graphql`

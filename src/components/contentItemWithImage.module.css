@@ -1,4 +1,4 @@
-@import "shared.module.css";
+@import "./shared.module.css";
 
 .content {
     margin: 2rem;

@@ -8,9 +8,6 @@
     background-color: var(--dark-color);
     grid-area: hd;
     height: 100vh;
-    display: grid;
-    grid-row-gap: 10rem;
-    grid-template-rows: min-content;
 }
 
 .ct {
@@ -36,46 +33,48 @@
 }
 
 .name {
-    font-size: 8rem;
+    font-size: 10vw;
     font-family: 'Megrim';
     color: var(--light-color);
     position: relative;
-    float: left;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     line-height: 6rem;
+    margin: 0;
+}
+
+.lastNameCommon {
+    position: relative;
+    top: 45%;
+    opacity: 0;
+    margin-top: 5vw;
+    /* transform: none; */
 }
 
 .lastName {
     font-family: 'Megrim';
-    opacity: 0;
 }
 
 .engineer {
     font-family: 'Wire One';
-    opacity: 0;
 }
 
 .traveler {
     font-family: 'Stalemate';
-    opacity: 0;
 }
 
 .writer {
     font-family: 'Dawning of a New Day';
-    opacity: 0;
 }
 
 .rider {
     font-family: 'Faster One';
-    opacity: 0;
 }
 
 .speaker {
     font-family: 'Londrina Outline';
-    opacity: 0;
 }
 
 .nameAppear {
@@ -155,7 +154,7 @@
 }
 
 .aboutContent {
-    margin: 6rem;
+    margin: 8vw;
 }
 
 .dark {
@@ -168,7 +167,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-row-gap: 10vh;
+    align-content: space-around;
+    justify-content: space-around;
+    
 }
 
 .twitter {
@@ -297,5 +301,8 @@
         left: auto;
         right: 0;
         transform: translate(+50%, +50%);
+    }
+    .socials {
+        grid-template-columns: repeat(6, auto);
     }
 }
