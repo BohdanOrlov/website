@@ -1,4 +1,5 @@
 @import "../components/shared.module.css";
+
 .body {
     margin: 0px;
     padding: 0px;
@@ -130,7 +131,8 @@
     margin: auto;
     left: 0;
     right: 0;
-    width: 8rem;
+    width: 150px;
+    height: 150px;
     transform: translate(+0%, -50%);
 }
 
@@ -289,6 +291,72 @@
 .hexagon:hover:before {
     /* border-bottom: 25px solid #EC008C; */
 }
+
+.hexagonImage {
+    position: relative;
+    width: 150px; 
+    height: 86.60px;
+    margin: 43.30px 0;
+    background-size: auto 173.2051px;
+    background-position: center;
+  }
+  
+  .hexTopImage,
+  .hexBottomImage {
+    position: absolute;
+    z-index: 1;
+    width: 106.07px;
+    height: 106.07px;
+    overflow: hidden;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background: inherit;
+    left: 21.97px;
+  }
+  
+  /*counter transform the bg image on the caps*/
+  .hexTopImage:after,
+  .hexBottomImage:after {
+    content: "";
+    position: absolute;
+    width: 150.0000px;
+    height: 86.60254037844388px;
+    -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-43.3013px);
+    -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-43.3013px);
+    transform:          rotate(45deg) scaleY(1.7321) translateY(-43.3013px);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    background: inherit;
+  }
+  
+  .hexTopImage {
+    top: -53.0330px;
+  }
+  
+  .hexTopImage:after {
+    background-position: center top;
+  }
+  
+  .hexBottomImage {
+    bottom: -53.0330px;
+  }
+  
+  .hexBottomImage:after {
+    background-position: center bottom;
+  }
+  
+  .hexagonImage:after {
+    content: "";
+    position: absolute;
+    top: 0.0000px;
+    left: 0;
+    width: 150.0000px;
+    height: 86.6025px;
+    z-index: 2;
+    background: inherit;
+  }
 
 @media screen and (orientation:landscape) {
     .headerContainer {
