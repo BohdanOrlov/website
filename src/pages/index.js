@@ -82,6 +82,7 @@ export default ({ data }) => {
                 {/* <div className={styles.hexagon}><i className={`${styles.fa} ${styles.twitter}`}></i></div> */}
             </div>
         </div>
+        <div className={styles.preloader} id="preloader"></div>
     </Container>
 }
 if (typeof window !== 'undefined') {
@@ -89,6 +90,7 @@ if (typeof window !== 'undefined') {
         onscroll()
         window.onscroll = onscroll
         lastNameShuffling()
+        document.getElementById("preloader").style.visibility="hidden";
     };
 }
 

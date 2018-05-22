@@ -5,6 +5,14 @@
     padding: 0px;
 }
 
+.preloader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: var(--dark-color);
+    z-index: 99999;
+}
+
 .hd {
     background-color: var(--dark-color);
     grid-area: hd;
