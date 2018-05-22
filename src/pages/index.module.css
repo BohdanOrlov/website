@@ -185,7 +185,7 @@
     
 }
 
-.twitter {
+.socialsCommon {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -193,56 +193,36 @@
     padding-top: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--light-color);
+}
+
+.twitter {
     -webkit-mask: url(https://unpkg.com/simple-icons@latest/icons/twitter.svg) no-repeat center;
     mask-image: url(https://unpkg.com/simple-icons@latest/icons/twitter.svg) no-repeat center;
 }
 
 .medium {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 50%;
-    padding-top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--light-color);
     -webkit-mask: url(https://unpkg.com/simple-icons@latest/icons/medium.svg) no-repeat center;
     mask-image: url(https://unpkg.com/simple-icons@latest/icons/medium.svg) no-repeat center;
 }
 
 .github {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 50%;
-    padding-top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--light-color);
     -webkit-mask: url(https://unpkg.com/simple-icons@latest/icons/github.svg) no-repeat center;
     mask-image: url(https://unpkg.com/simple-icons@latest/icons/github.svg) no-repeat center;
 }
 
 .facebook {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 50%;
-    padding-top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--light-color);
     -webkit-mask: url(https://unpkg.com/simple-icons@latest/icons/facebook.svg) no-repeat center;
     mask-image: url(https://unpkg.com/simple-icons@latest/icons/facebook.svg) no-repeat center;
 }
 
 .linkedIn {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 50%;
-    padding-top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--light-color);
     -webkit-mask: url(https://unpkg.com/simple-icons@latest/icons/linkedin.svg) no-repeat center;
     mask-image: url(https://unpkg.com/simple-icons@latest/icons/linkedin.svg) no-repeat center;
+}
+
+.instagram {
+    -webkit-mask: url(https://unpkg.com/simple-icons@1.6.0/icons/instagram.svg) no-repeat center;
+    mask-image: url(https://unpkg.com/simple-icons@1.6.0/icons/instagram.svg) no-repeat center;
 }
 
 .hexagon {

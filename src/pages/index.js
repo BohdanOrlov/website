@@ -74,11 +74,12 @@ export default ({ data }) => {
         <div className={styles.ft} id="contact">
             <ParticlesBottom />
             <div className={styles.socials}>
-                <div className={styles.hexagon}><div className={styles.github} onClick={() => openURL('https://github.com/BohdanOrlov')} /></div>
-                <div className={styles.hexagon}><div className={styles.medium} onClick={() => openURL('https://medium.com/@borlov')} /></div>
-                <div className={styles.hexagon}><div className={styles.twitter} onClick={() => openURL('https://twitter.com/bohdan_orlov')} /></div>
-                <div className={styles.hexagon}><div className={styles.facebook} onClick={() => openURL('https://www.facebook.com/bohdan.orlov')} /></div>
-                <div className={styles.hexagon}><div className={styles.linkedIn} onClick={() => openURL('https://www.linkedin.com/in/bohdan-orlov-3a090255')} /></div>
+                <div className={styles.hexagon}><div className={`${styles.socialsCommon} ${styles.github}`} onClick={() => openURL('https://github.com/BohdanOrlov')} /></div>
+                <div className={styles.hexagon}><div className={`${styles.socialsCommon} ${styles.medium}`} onClick={() => openURL('https://medium.com/@borlov')} /></div>
+                <div className={styles.hexagon}><div className={`${styles.socialsCommon} ${styles.twitter}`} onClick={() => openURL('https://twitter.com/bohdan_orlov')} /></div>
+                <div className={styles.hexagon}><div className={`${styles.socialsCommon} ${styles.facebook}`} onClick={() => openURL('https://www.facebook.com/bohdan.orlov')} /></div>
+                <div className={styles.hexagon}><div className={`${styles.socialsCommon} ${styles.linkedIn}`} onClick={() => openURL('https://www.linkedin.com/in/bohdan-orlov-3a090255')} /></div>
+                <div className={styles.hexagon}><div className={`${styles.socialsCommon} ${styles.instagram}`} onClick={() => openURL('https://www.instagram.com/b0rlov/')} /></div>
                 {/* <div className={styles.hexagon}><i className={`${styles.fa} ${styles.twitter}`}></i></div> */}
             </div>
         </div>
