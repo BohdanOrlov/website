@@ -37,7 +37,7 @@ export default ({ data }) => {
                 <div className={styles.headerContainer} id="about">
                     <h1 className={`${styles.headerTitle} ${styles.lightColor}`}>About</h1>
                     <div className={styles.photoImage}>
-                        <div className={styles.hexagonImage} style={{backgroundImage: "url(" + photoImage + ")"}}>
+                        <div className={styles.hexagonImage} style={{ backgroundImage: "url(" + photoImage + ")" }}>
                             <div className={styles.hexTopImage}></div>
                             <div className={styles.hexBottomImage}></div>
                         </div>
@@ -74,12 +74,24 @@ export default ({ data }) => {
         <div className={styles.ft} id="contact">
             <ParticlesBottom />
             <div className={styles.socials}>
-                <div className={styles.hexagon}><div className={`${styles.socialsCommon} ${styles.github}`} onClick={() => openURL('https://github.com/BohdanOrlov')} /></div>
-                <div className={styles.hexagon}><div className={`${styles.socialsCommon} ${styles.medium}`} onClick={() => openURL('https://medium.com/@borlov')} /></div>
-                <div className={styles.hexagon}><div className={`${styles.socialsCommon} ${styles.twitter}`} onClick={() => openURL('https://twitter.com/bohdan_orlov')} /></div>
-                <div className={styles.hexagon}><div className={`${styles.socialsCommon} ${styles.facebook}`} onClick={() => openURL('https://www.facebook.com/bohdan.orlov')} /></div>
-                <div className={styles.hexagon}><div className={`${styles.socialsCommon} ${styles.linkedIn}`} onClick={() => openURL('https://www.linkedin.com/in/bohdan-orlov-3a090255')} /></div>
-                <div className={styles.hexagon}><div className={`${styles.socialsCommon} ${styles.instagram}`} onClick={() => openURL('https://www.instagram.com/b0rlov/')} /></div>
+                <div className={styles.hexagon} onClick={() => openURL('https://github.com/BohdanOrlov')}>
+                    <div className={`${styles.socialsCommon} ${styles.github}`} />
+                </div>
+                <div className={styles.hexagon} onClick={() => openURL('https://medium.com/@borlov')} >
+                    <div className={`${styles.socialsCommon} ${styles.medium}`} />
+                </div>
+                <div className={styles.hexagon} onClick={() => openURL('https://twitter.com/bohdan_orlov')} >
+                    <div className={`${styles.socialsCommon} ${styles.twitter}`} />
+                </div>
+                <div className={styles.hexagon} onClick={() => openURL('https://www.facebook.com/bohdan.orlov')}>
+                    <div className={`${styles.socialsCommon} ${styles.facebook}`} />
+                </div>
+                <div className={styles.hexagon} onClick={() => openURL('https://www.linkedin.com/in/bohdan-orlov-3a090255')}>
+                    <div className={`${styles.socialsCommon} ${styles.linkedIn}`} />
+                </div>
+                <div className={styles.hexagon} onClick={() => openURL('https://www.instagram.com/b0rlov/')}>
+                    <div className={`${styles.socialsCommon} ${styles.instagram}`} />
+                </div>
                 {/* <div className={styles.hexagon}><i className={`${styles.fa} ${styles.twitter}`}></i></div> */}
             </div>
         </div>
@@ -91,7 +103,7 @@ if (typeof window !== 'undefined') {
         onscroll()
         window.onscroll = onscroll
         lastNameShuffling()
-        document.getElementById("preloader").style.visibility="hidden";
+        document.getElementById("preloader").style.visibility = "hidden";
     };
 }
 
