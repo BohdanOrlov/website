@@ -359,3 +359,9 @@ body {
         grid-template-columns: repeat(6, auto);
     }
 }
+
+@media (hover: none) {
+    .hexagon:hover {
+        transform: scale(1.0);
+    }
+}
