@@ -1,10 +1,10 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
+### Website
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
-```
+[arch.guru](http://arch.guru) is an example of what can happen if an iOS engineer tries to do web for the first time 😅
 
-## Running in development
-`gatsby develop`
+### Tool
+
+- [Gatsby](https://www.gatsbyjs.org/) as a development framework/foundation
+- [surge.sh](http://surge.sh/) for deployment
+- [Localtunnel](https://localtunnel.github.io/www/) for testing on a mobile device/showing to others.
+
