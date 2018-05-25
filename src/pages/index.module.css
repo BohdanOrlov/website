@@ -32,6 +32,7 @@
     grid-area: ft;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 .navigationContainer {
@@ -179,9 +180,7 @@
     transform: translate(-50%, -50%);
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-row-gap: 10vh;
-    align-content: space-around;
-    justify-content: space-around;
+    grid-row-gap: 100px;
     
 }
 
@@ -238,9 +237,6 @@
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
 }
 
 .hexagon:before {

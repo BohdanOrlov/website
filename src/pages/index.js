@@ -92,7 +92,6 @@ export default ({ data }) => {
                 <div className={styles.hexagon} onClick={() => openURL('https://www.instagram.com/b0rlov/')}>
                     <div className={`${styles.socialsCommon} ${styles.instagram}`} />
                 </div>
-                {/* <div className={styles.hexagon}><i className={`${styles.fa} ${styles.twitter}`}></i></div> */}
             </div>
         </div>
         <div className={styles.preloader} id="preloader"></div>
