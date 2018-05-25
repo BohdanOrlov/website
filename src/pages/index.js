@@ -21,6 +21,8 @@ import onefinestayImage from "./content/resources/work/onefinestay.png"
 import whooleyImage from "./content/resources/work/whooley.jpg"
 import tptImage from "./content/resources/work/tpt.png"
 
+import metaimage from "./content/resources/metaimage.png"
+
 export default ({ data }) => {
     return <Container>
         <div className={styles.hd}>
@@ -99,6 +101,11 @@ export default ({ data }) => {
         <meta name="description" content="I’m an iOS Engineer and Team Lead from Ukraine living in London" />
         <meta name="keywords" content="ios, swift, objc, objective-c, architecture, articles, roadmap" />
         <meta name="author" content="Bohdan Orlov" />
+        <meta property="og:url" content="http://www.arch.guru" />
+        <meta property="og:type" content="profile" />
+        <meta property="og:title" content="Bohdan Orlov - iOS Engineer &amp; Team Lead" />
+        <meta property="og:description" content="I’m an iOS Engineer and Team Lead from Ukraine living in London" />
+        <meta property="og:image" content={metaimage} />
     </Container>
 }
 if (typeof window !== 'undefined') {
