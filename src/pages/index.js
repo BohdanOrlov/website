@@ -95,6 +95,10 @@ export default ({ data }) => {
             </div>
         </div>
         <div className={styles.preloader} id="preloader"></div>
+        <title>Bohdan Orlov - iOS Engineer &amp; Team Lead</title>
+        <meta name="description" content="I’m an iOS Engineer and Team Lead from Ukraine living in London" />
+        <meta name="keywords" content="ios, swift, objc, objective-c, architecture, articles, roadmap" />
+        <meta name="author" content="Bohdan Orlov" />
     </Container>
 }
 if (typeof window !== 'undefined') {
