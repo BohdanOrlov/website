@@ -1,8 +1,9 @@
 @import "../components/shared.module.css";
 
-.body {
+body {
     margin: 0px;
     padding: 0px;
+    background: var(--accent-color);
 }
 
 .preloader {
