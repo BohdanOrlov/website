@@ -11,8 +11,9 @@ import lastNameShuffling from "../utils/lastNameShuffling";
 
 import photoImage from "./content/resources/cropped.jpg"
 
-import architectureImage from "./content/resources/outreach/architecture.jpeg"
-import roadmapImage from "./content/resources/outreach/roadmap.png"
+import architectureImage from "./content/resources/contributions/architecture.jpeg"
+import roadmapImage from "./content/resources/contributions/roadmap.png"
+import matrixImage from "./content/resources/contributions/matrix_cut.png"
 
 import moonpigImage from "./content/resources/work/moonpig.png"
 import chappyImage from "./content/resources/work/chappy.png"
@@ -50,12 +51,13 @@ export default ({ data }) => {
                 <div className={styles.aboutContent} dangerouslySetInnerHTML={{ __html: data.about.edges[0].node.html }} />
             </div>
             <div className={styles.header2}>
-                <div className={styles.headerContainer} id="outreach">
-                    <h1 className={`${styles.headerTitle} ${styles.darkColor}`}>Outreach</h1>
+                <div className={styles.headerContainer} id="contributions">
+                    <h1 className={`${styles.headerTitle} ${styles.darkColor}`}>Contributions</h1>
                 </div>
             </div>
             <div className={styles.dark}>
                 <ContentItem data={{ image: architectureImage, url: 'https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52', html: data.architecture.edges[0].node.html }} />
+                <ContentItem data={{ image: matrixImage, url: 'https://github.com/BohdanOrlov/ios-skills-matrix', html: data.matrix.edges[0].node.html }} />
                 <ContentItem data={{ image: roadmapImage, url: 'https://github.com/BohdanOrlov/iOS-Developer-Roadmap', html: data.roadmap.edges[0].node.html }} />
             </div>
             <div className={styles.header3}>
@@ -132,6 +134,16 @@ export const query = graphql`
                 }
         architecture: allMarkdownRemark(
             filter: {fileAbsolutePath: {regex: "/(architecture)\\.md$/"}}, 
+            limit: 1
+        ) {
+            edges {
+                node {
+                    html
+                }
+            }
+        }
+        matrix: allMarkdownRemark(
+            filter: {fileAbsolutePath: {regex: "/(matrix)\\.md$/"}}, 
             limit: 1
         ) {
             edges {

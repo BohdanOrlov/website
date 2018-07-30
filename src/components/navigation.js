@@ -8,7 +8,7 @@ export default () => {
             <ul>
                 <li><a href="#about" onClick={() => {scrollTo("about")}}>ABOUT</a></li>
                 <li>|</li>
-                <li><a href="#outreach" onClick={() => {scrollTo("outreach")}}>OUTREACH</a></li>
+                <li><a href="#contributions" onClick={() => {scrollTo("contributions")}}>CONTRIBUTIONS</a></li>
                 <li>|</li>
                 <li><a href="#work" onClick={() => {scrollTo("work")}}>WORK</a></li>
                 <li>|</li>

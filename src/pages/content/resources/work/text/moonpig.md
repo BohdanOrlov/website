@@ -11,7 +11,7 @@ Defining and implementing **2018 strategy**:
 - **one-click** iOS app **submission** to App Store from any commit
 - finalize app **architecture**
 - perform app **modularisation**
-- robust **pyramid of tests** with nonduplicating layers.
+- robust **pyramid of tests** with non-duplicating layers.
 - leverage **code generation** tools
 - **automated regressions** for core app flow
 - **constant** processes **improvement**
